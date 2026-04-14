@@ -1,0 +1,2 @@
+heart0.png 0,5
+heart1.png 0,5

@@ -1,0 +1,8 @@
+sweetAlien0.png 0,2
+sweetAlien1.png 0,5
+sweetAlien2.png 0,2
+sweetAlien3.png 0,5
+sweetAlien4.png 0,4
+sweetAlien5.png 0,2
+sweetAlien6.png 0,3
+sweetAlien7.png 0,5

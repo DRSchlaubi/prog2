@@ -1,0 +1,41 @@
+z-buffering regeln für alle Objekte!
+Dafür: Objektgeruppen einrichten, charaktisiert durch "int"
+a) int Playground.registerObjectGroup(String)
+b) int Playground.getObjectGroupID(String)
+c) LinkedList<GameObject> Playground.getObjectGroup(int/String)
+d) Playground.setObjectGroupZ(int, int)
+e) Playground.addObjectToGroup(String, GameObject)
+- Alle Objekte in einer group haben gleiches Z
+Bisherige Objektliste bleibt natürlich, dort kann jedes Objekt andere Zs haben! 
+
+OK framerate-rte fixen
+
+Flags: NUR globale Flags für Zustände die über Levels hinausgehen speichern. die werden static i9n Playground gespeichert
+Datentypen: float, string!
+
+load/save: 
+Ansonsten sind alle states instanzattribute die eine @saveable annotation haben!!
+Ebenso Zustandsvariablen in Artists, Controllern und XXX. 
+Gametime muss auch gespeichert werden!
+
+Neue spiele: tetris, lemmings, alley cats, cosmo, 
+
+??javashooter.controller: mehrere javashooter.controller möglich, letzter hat letztes Wort.
+ein javashooter.controller-typ sollte ein collisionController sein, der
+so etwas wie eine physics-engine baut: bei kollisionen mit anderen
+pyhsiks-Objekten sorgt er für a) abprallen b) stop abhängig von bestimmten Konstanten
+Gravity-Controller auch möglich!
+
+OK panning!!Simpel per setviewport-javashooter.controller, der zB den viewport des 
+
+Tastendrücke und Maus-Events per callback! Levelcontroller raus...
+
+doku: was ist Bedeutung von Koordinaten?
+
+Kollisionserkennung: wenn man will kann man den Punkt bekommen, an dem der Geschwindigkeitsvektor von obj1 obj2 schneidet!
+
+zwischenscreens als dummy-Level: Parent-Klasse dafür erstellen!
+
+
+
+

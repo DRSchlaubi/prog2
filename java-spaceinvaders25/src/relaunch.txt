@@ -1,0 +1,31 @@
+verzstrultur anpassen
+frage nach laden/speichern von zust�nden. alle sonstigen vaeiablen persistent 
+einfah plaxground.flags und gameObejcts wegsoeichern er JSON. muss nur member annotieren dann passt das einfach.
+
+
+javashooter.collider-struktur �berdenken buw dokumentieren
+
+
+gameobject: wrapper, nur Darstellung wird hier definiert. Ableitungen �ndern nur Darstellung sonst nichts
+  javashooter.controller
+  list<Collider>
+  
+  x,y,vx,vy
+  
+  collisionMode RAUS
+  
+  neben __init__ auch setup/reset methode
+  
+  warum braucht javashooter.collider zugriff auf javashooter.controller und javashooter.playground??
+  
+javashooter.playground: 
+  
+  OK mergr with keyboardController
+  
+  neben __init__ auch setup/reset methode
+  
+  OK elegantere L�sung wie gameMain auf keys der LEvels zugreift
+  
+  
+  
+

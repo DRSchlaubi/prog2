@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/java-spaceinvaders25/src" />
+    <content url="file://$MODULE_DIR$/java-spaceinvaders25">
+      <sourceFolder url="file://$MODULE_DIR$/java-spaceinvaders25/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java-spaceinvaders25/video" type="java-resource" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="module" module-name="javashooter-framework25" />
+  </component>
+</module>
