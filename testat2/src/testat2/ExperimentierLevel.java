@@ -63,10 +63,15 @@ public class ExperimentierLevel extends Playground {
         addObject(rect);
 
         for (var i = 0; i < 100; i++) {
-            var speed = ThreadLocalRandom.current().nextInt(-30, 30);
-            var pixel = new RectObject(String.valueOf(i), this, 250, 250, speed, speed, 2, 2, Color.RED);
+            var speedX = randomSpeed();
+            var speedY = randomSpeed();
+            var pixel = new RectObject(String.valueOf(i), this, 250, 250, speedX, speedY, 2, 2, Color.RED);
             pixel.setController(new KinematicsController());
             addObject(pixel);
         }
+    }
+
+    private static int randomSpeed() {
+        return ThreadLocalRandom.current().nextInt(-30, 30);
     }
 }
