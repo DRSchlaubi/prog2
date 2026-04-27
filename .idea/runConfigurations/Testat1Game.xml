@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="MyGame" type="Application" factoryName="Application" nameIsGenerated="true">
-    <option name="MAIN_CLASS_NAME" value="spaceinvadersProject.MyGame" />
+  <configuration default="false" name="Testat1Game" type="Application" factoryName="Application" nameIsGenerated="true">
+    <option name="MAIN_CLASS_NAME" value="testat1.Testat1Game" />
     <module name="java-spaceinvaders25" />
     <option name="WORKING_DIRECTORY" value="$ModuleFileDir$/java-spaceinvaders25" />
     <extension name="coverage">
