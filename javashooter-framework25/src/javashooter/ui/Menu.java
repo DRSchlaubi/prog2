@@ -10,7 +10,6 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 import javashooter.playground.Playground;
-import javashooter.ui.GameUI;
 
 public class Menu {
 

@@ -1,5 +1,6 @@
 package testat1;
 
+import javashooter.gameobjects.GameObject;
 import spaceinvadersProject.playground.SpaceInvadersLevel;
 
 public class ProjektLevel3 extends SpaceInvadersLevel {
@@ -31,5 +32,14 @@ public class ProjektLevel3 extends SpaceInvadersLevel {
     @Override
     protected double calcEnemySpeedY() {
         return 140;
+    }
+
+    @Override
+    protected void actionIfEgoCollidesWithEnemy(GameObject enemy, GameObject ego) {
+        if (enemy.getName().startsWith("fly_")) {
+            System.out.println("dsa");
+        } else {
+            System.out.println("dsa");
+        }
     }
 }

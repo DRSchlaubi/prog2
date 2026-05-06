@@ -57,8 +57,8 @@ public class ExperimentierLevel extends Playground {
     public void prepareLevel(String level) {
         System.out.println("Hello world!");
 
-        var rect = new RectObject("johos", this,100,100,10, 10, 80, 10, Color.RED);
-        rect.setOmega(100);
+        var rect = new RectObject("johos", this, 100, 100, 10, 10, 80, 10, Color.RED);
+        rect.setOmega(2 * Math.PI);
         rect.setController(new KinematicsController());
         addObject(rect);
 

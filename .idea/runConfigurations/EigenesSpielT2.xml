@@ -1,7 +1,7 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="EigenesSpielT2" type="Application" factoryName="Application" nameIsGenerated="true">
     <option name="MAIN_CLASS_NAME" value="testat2.EigenesSpielT2" />
-    <module name="testat2" />
+    <module name="prog2.testat2.main" />
     <extension name="coverage">
       <pattern>
         <option name="PATTERN" value="testat2.*" />
