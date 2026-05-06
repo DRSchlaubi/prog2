@@ -1,10 +1,11 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="EigenesSpielT2" type="Application" factoryName="Application" nameIsGenerated="true">
-    <option name="MAIN_CLASS_NAME" value="testat2.EigenesSpielT2" />
-    <module name="testat2" />
+  <configuration default="false" name="Testat4Game" type="Application" factoryName="Application" nameIsGenerated="true">
+    <option name="MAIN_CLASS_NAME" value="testat4.Testat4Game" />
+    <module name="testat4" />
+    <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/java-spaceinvaders25" />
     <extension name="coverage">
       <pattern>
-        <option name="PATTERN" value="testat2.*" />
+        <option name="PATTERN" value="testat4.*" />
         <option name="ENABLED" value="true" />
       </pattern>
     </extension>
