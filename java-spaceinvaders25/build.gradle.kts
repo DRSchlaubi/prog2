@@ -1,7 +1,8 @@
 plugins {
     testat
+    `java-library`
 }
 
 dependencies {
-    implementation(projects.javashooterFramework25)
+    api(projects.javashooterFramework25)
 }
