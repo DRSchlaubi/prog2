@@ -20,7 +20,7 @@ public class Testat5Level extends SpaceInvadersLevel {
 
         var shieldObject = new GameObject("shield", this, 0, 0, 0, 0);
         shieldObject.setObjectController(new ShieldController(shieldObject, ego));
-        shieldObject.addArtist(new CircleArtist(shieldObject, 50, new Color(0x80808033)));
+        shieldObject.addArtist(new CircleArtist(shieldObject, 50, new Color(255,0,0, 50)));
 
         addObject(shieldObject);
     }
@@ -72,6 +72,7 @@ public class Testat5Level extends SpaceInvadersLevel {
             shoot(ego);
         } else if (getFlagAsString("power_shoot", false, "false").equals("true")) {
             setFlagAsString("shoot_pressed", "false", false);
+            setFlagAsString("power_shoot", "false", false);
             powerUpUntil = 0;
         }
     }
