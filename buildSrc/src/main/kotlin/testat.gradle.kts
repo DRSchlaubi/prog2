@@ -9,5 +9,5 @@ sourceSets {
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_26
+    sourceCompatibility = JavaVersion.VERSION_25
 }
