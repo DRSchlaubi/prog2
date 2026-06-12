@@ -85,6 +85,8 @@ void main() {
     JButton jumper = new JButton("JUMP");
     jumper.setAlignmentX(JComponent.CENTER_ALIGNMENT);
     jumper.addMouseListener(new MouseListener() {
+        boolean moved = false;
+
         @Override
         public void mouseClicked(MouseEvent e) {
 
@@ -102,7 +104,11 @@ void main() {
 
         @Override
         public void mouseEntered(MouseEvent e) {
-            
+            int jx = jumper.getX();
+            int jy = jumper.getY();
+            int dx = 100;
+            jumper.setLocation((moved) ? jx - dx : jx + dx, jy);
+            moved = !moved;
         }
 
         @Override

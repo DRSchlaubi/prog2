@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c55ac9f-3e9c-4b3c-a53a-f07c0e1f2e5b" name="Changes" comment="add testat2 package for Testat 6">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../testat8/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../testat8/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
