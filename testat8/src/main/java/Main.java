@@ -83,9 +83,68 @@ void main() {
     gridPanel.setAlignmentX(JComponent.CENTER_ALIGNMENT);
 
     JButton jumper = new JButton("JUMP");
+    jumper.addActionListener(_ -> contentPain.setBackground(Color.RED));
     jumper.setAlignmentX(JComponent.CENTER_ALIGNMENT);
     jumper.addMouseListener(new MouseListener() {
-        boolean moved = false;
+        enum MovingDirection {
+            LEFT {
+                @Override
+                public MovingDirection unaryMinus() {
+                    return MovingDirection.RIGHT;
+                }
+
+                @Override
+                public int moveTo(MovingDirection direction) {
+                    return direction == MovingDirection.CENTER ? 100 : -100;
+                }
+            }, RIGHT {
+                @Override
+                public MovingDirection unaryMinus() {
+                    return MovingDirection.LEFT;
+                }
+
+                @Override
+                public int moveTo(MovingDirection direction) {
+                    return direction == MovingDirection.CENTER ? -100 : 100;
+                }
+            }, CENTER {
+                private MovingDirection previous;
+
+                @Override
+                public MovingDirection unaryMinus() {
+                    throw new UnsupportedOperationException("Unary minus not supported for CENTER direction");
+                }
+
+                @Override
+                public int moveTo(MovingDirection direction) {
+                    return direction == MovingDirection.LEFT ? -100 : 100;
+                }
+
+                @Override
+                public MovingDirection next() {
+                    MovingDirection next;
+                    if (previous == null) {
+                        var random = ThreadLocalRandom.current().nextBoolean();
+                        next = random ? MovingDirection.LEFT : MovingDirection.RIGHT;
+                    } else {
+                        next = previous.unaryMinus();
+                    }
+                    previous = next;
+                    return next;
+                }
+            };
+
+            public MovingDirection next() {
+                return MovingDirection.CENTER;
+            }
+
+            public abstract MovingDirection unaryMinus();
+
+            public abstract int moveTo(MovingDirection direction);
+        }
+
+        private MovingDirection direction = MovingDirection.CENTER;
+
 
         @Override
         public void mouseClicked(MouseEvent e) {
@@ -104,11 +163,12 @@ void main() {
 
         @Override
         public void mouseEntered(MouseEvent e) {
+            var nextDirection = direction.next();
             int jx = jumper.getX();
             int jy = jumper.getY();
-            int dx = 100;
-            jumper.setLocation((moved) ? jx - dx : jx + dx, jy);
-            moved = !moved;
+            int dx = direction.moveTo(nextDirection);
+            jumper.setLocation(jx + dx, jy);
+            direction = nextDirection;
         }
 
         @Override
