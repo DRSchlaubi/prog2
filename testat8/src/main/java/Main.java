@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.awt.print.Printable;
 import java.awt.print.PrinterException;
 import java.awt.print.PrinterJob;
@@ -80,8 +82,39 @@ void main() {
     gridPanel.setMaximumSize(gridPanel.getPreferredSize());
     gridPanel.setAlignmentX(JComponent.CENTER_ALIGNMENT);
 
+    JButton jumper = new JButton("JUMP");
+    jumper.setAlignmentX(JComponent.CENTER_ALIGNMENT);
+    jumper.addMouseListener(new MouseListener() {
+        @Override
+        public void mouseClicked(MouseEvent e) {
+
+        }
+
+        @Override
+        public void mousePressed(MouseEvent e) {
+
+        }
+
+        @Override
+        public void mouseReleased(MouseEvent e) {
+
+        }
+
+        @Override
+        public void mouseEntered(MouseEvent e) {
+            
+        }
+
+        @Override
+        public void mouseExited(MouseEvent e) {
+
+        }
+    });
+
     contentPain.add(Box.createVerticalStrut(20));
     contentPain.add(gridPanel);
     contentPain.add(Box.createVerticalStrut(10));
     contentPain.add(label);
+    contentPain.add(Box.createVerticalStrut(10));
+    contentPain.add(jumper);
 }
