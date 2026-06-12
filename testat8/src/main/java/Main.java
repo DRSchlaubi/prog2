@@ -1,8 +1,11 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.print.Printable;
+import java.awt.print.PrinterException;
+import java.awt.print.PrinterJob;
 import java.util.List;
 
-import static java.lang.IO.print;
+import static java.lang.IO.println;
 
 void main() {
     final List<Integer> neinClix = new ArrayList<>();
@@ -25,8 +28,26 @@ void main() {
     file.add(reset);
 
     JMenuItem print = new JMenuItem("Print queue");
-    print.addActionListener(e -> print(neinClix));
+    print.addActionListener(e -> println(neinClix));
     file.add(print);
+
+    JMenuItem actuallyPrint = new JMenuItem("Actually Print queue");
+    actuallyPrint.addActionListener(_ -> {
+        var job = PrinterJob.getPrinterJob();
+        job.setPrintable((graphics, format, page) -> {
+            if (page > 0) return Printable.NO_SUCH_PAGE;
+            graphics.drawString(neinClix.toString(), 10, 10);
+            return Printable.PAGE_EXISTS;
+        });
+        if (job.printDialog()) {
+            try {
+                job.print();
+            } catch (PrinterException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    });
+    file.add(actuallyPrint);
 
     JMenuItem exit = new JMenuItem("Exit");
     exit.addActionListener(e -> System.exit(0));
@@ -40,11 +61,11 @@ void main() {
     JLabel label = new JLabel("Left1+Left2+Left3+Right1 klicken!");
     label.setAlignmentX(JComponent.CENTER_ALIGNMENT);
 
-    JPanel gridPanel = new JPanel(new GridLayout(3,2));
+    JPanel gridPanel = new JPanel(new GridLayout(3, 2));
     var buttonNames = List.of(
-        Map.entry("Left1", 1), Map.entry("Right1", 11),
-        Map.entry("Left2", 2), Map.entry("Right2", 12),
-        Map.entry("Left3", 3), Map.entry("Right3", 13)
+            Map.entry("Left1", 1), Map.entry("Right1", 11),
+            Map.entry("Left2", 2), Map.entry("Right2", 12),
+            Map.entry("Left3", 3), Map.entry("Right3", 13)
     );
     buttonNames.forEach(entry -> {
         JButton button = new JButton(entry.getKey());
