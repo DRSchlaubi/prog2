@@ -18,7 +18,6 @@ void main() {
     gui.setContentPane(contentPain);
     gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     gui.setSize(300, 250);
-    gui.setVisible(true);
 
     //----------------------------------------
 
@@ -36,7 +35,7 @@ void main() {
     JMenuItem actuallyPrint = new JMenuItem("Actually Print queue");
     actuallyPrint.addActionListener(_ -> {
         var job = PrinterJob.getPrinterJob();
-        job.setPrintable((graphics, format, page) -> {
+        job.setPrintable((graphics, _, page) -> {
             if (page > 0) return Printable.NO_SUCH_PAGE;
             graphics.drawString(neinClix.toString(), 10, 10);
             return Printable.PAGE_EXISTS;
@@ -183,4 +182,7 @@ void main() {
     contentPain.add(label);
     contentPain.add(Box.createVerticalStrut(10));
     contentPain.add(jumper);
+
+
+    gui.setVisible(true);
 }
