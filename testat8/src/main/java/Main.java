@@ -24,11 +24,11 @@ void main() {
     JMenu file = new JMenu("File");
 
     JMenuItem reset = new JMenuItem("Reset queue");
-    reset.addActionListener(e -> neinClix.clear());
+    reset.addActionListener(_ -> neinClix.clear());
     file.add(reset);
 
     JMenuItem print = new JMenuItem("Print queue");
-    print.addActionListener(e -> println(neinClix));
+    print.addActionListener(_ -> println(neinClix));
     file.add(print);
 
     JMenuItem actuallyPrint = new JMenuItem("Actually Print queue");
@@ -50,7 +50,7 @@ void main() {
     file.add(actuallyPrint);
 
     JMenuItem exit = new JMenuItem("Exit");
-    exit.addActionListener(e -> System.exit(0));
+    exit.addActionListener(_ -> System.exit(0));
     file.add(exit);
 
     menuBar.add(file);
@@ -70,7 +70,7 @@ void main() {
     buttonNames.forEach(entry -> {
         JButton button = new JButton(entry.getKey());
         gridPanel.add(button);
-        button.addActionListener(e -> {
+        button.addActionListener(_ -> {
             neinClix.add(entry.getValue());
             if (neinClix.equals(List.of(1, 2, 3, 11))) {
                 System.exit(0);
