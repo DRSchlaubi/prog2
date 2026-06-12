@@ -313,7 +313,7 @@ public abstract class SpaceInvadersLevel extends Playground {
    * @param interval
    * @param color
    */
-  void createExplosion(double gameTime, GameObject e, String basename, double interval,
+  protected void createExplosion(double gameTime, GameObject e, String basename, double interval,
       Color color) {
     // 
     for (int i = 0; i < NRSHARDS; i++) {

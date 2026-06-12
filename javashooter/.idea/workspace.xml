@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5c55ac9f-3e9c-4b3c-a53a-f07c0e1f2e5b" name="Changes" comment="add testat2 package for Testat 6">
+      <change afterPath="$PROJECT_DIR$/../testat7/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testat7/src/main/java/testat7/Testat7Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testat7/src/main/java/testat7/Testat7Level.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../testat8/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-spaceinvaders25/src/spaceinvadersProject/playground/SpaceInvadersLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-spaceinvaders25/src/spaceinvadersProject/playground/SpaceInvadersLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../settings.gradle.kts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/..">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="prog2" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3DJcs8sv524wiDnvCp1Kdmtv8yR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Testat1Game.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Testat4Game.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Testat5Game.executor&quot;: &quot;Profiler#1&quot;,
+    &quot;Gradle.Build javashooter.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build prog2.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.javashooter [:testat4:testat4.Testat4Game.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.prog2 [:testat2:testat2.Testat2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.prog2 [:testat5:testat5.Testat5Game.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.prog2 [:testat7:testat7.Testat7Game.main()].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Rebasing main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/jfk/ubuntu-home/hs-fulda/sose-26/prog2/testat8&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../testat8" />
+      <recent name="$PROJECT_DIR$/../testat7" />
+      <recent name="$PROJECT_DIR$/../testat5/src/testat5/playground" />
+      <recent name="$PROJECT_DIR$/../testat5/src" />
+      <recent name="$PROJECT_DIR$/../testat5" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Testat7">
+    <configuration name="Testat2" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="testat2.Testat2" />
+      <module name="prog2.testat2.main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../java-spaceinvaders25" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testat5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Testat5Game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testat5.Testat5Game" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../java-spaceinvaders25" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testat5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Testat7" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="testat7.Testat7Game" />
+      <module name="prog2.testat7.main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../java-spaceinvaders25" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testat5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Testat2" />
+      <item itemvalue="Application.Testat7" />
+      <item itemvalue="Application.Testat5Game" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Testat5Game" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.24374.66" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.24374.66" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5c55ac9f-3e9c-4b3c-a53a-f07c0e1f2e5b" name="Changes" comment="" />
+      <created>1778003816732</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1778003816732</updated>
+      <workItem from="1778003817937" duration="2828000" />
+      <workItem from="1778006736058" duration="3765000" />
+      <workItem from="1778048846529" duration="3382000" />
+      <workItem from="1778102502148" duration="665000" />
+      <workItem from="1778148128454" duration="5000" />
+      <workItem from="1778148426153" duration="30000" />
+      <workItem from="1778148501406" duration="419000" />
+      <workItem from="1778148993707" duration="941000" />
+      <workItem from="1778150119612" duration="74000" />
+      <workItem from="1778150215253" duration="753000" />
+      <workItem from="1779089588911" duration="879000" />
+      <workItem from="1779093943134" duration="605000" />
+      <workItem from="1779100358278" duration="7916000" />
+      <workItem from="1779257523488" duration="1177000" />
+      <workItem from="1780059171431" duration="2807000" />
+      <workItem from="1780404381920" duration="5265000" />
+      <workItem from="1780466115270" duration="4455000" />
+      <workItem from="1780993879071" duration="155000" />
+      <workItem from="1780994194544" duration="521000" />
+      <workItem from="1781246007038" duration="1357000" />
+      <workItem from="1781267213315" duration="360000" />
+    </task>
+    <task id="LOCAL-00001" summary="testat 4">
+      <option name="closed" value="true" />
+      <created>1778049057952</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1778049057952</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add testat2 package for Testat 6">
+      <option name="closed" value="true" />
+      <created>1780061843516</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1780061843516</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="testat 4" />
+    <MESSAGE value="add testat2 package for Testat 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="add testat2 package for Testat 6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../java-spaceinvaders25/src/spaceinvadersProject/playground/SpaceInvadersLevel.java</url>
+          <line>678</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
