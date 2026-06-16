@@ -6,5 +6,6 @@ include("testat4")
 include("testat5")
 include("testat7")
 include("testat8")
+include("testat9")
 
 project(":testat5").name = "Testat5"
