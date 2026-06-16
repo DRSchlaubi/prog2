@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c55ac9f-3e9c-4b3c-a53a-f07c0e1f2e5b" name="Changes" comment="add testat2 package for Testat 6">
-      <change afterPath="$PROJECT_DIR$/../testat9/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testat9/src/main/java/Eintrag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testat9/src/main/java/Uebungsblatt12.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testat8/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../testat8/src/main/java/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="5c55ac9f-3e9c-4b3c-a53a-f07c0e1f2e5b" name="Changes" comment="add testat2 package for Testat 6" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -218,7 +209,7 @@
       <workItem from="1781246007038" duration="1357000" />
       <workItem from="1781267213315" duration="6104000" />
       <workItem from="1781448861937" duration="100000" />
-      <workItem from="1781634844072" duration="4581000" />
+      <workItem from="1781634844072" duration="4934000" />
     </task>
     <task id="LOCAL-00001" summary="testat 4">
       <option name="closed" value="true" />
@@ -265,11 +256,6 @@
           <url>file://$PROJECT_DIR$/../java-spaceinvaders25/src/spaceinvadersProject/playground/SpaceInvadersLevel.java</url>
           <line>678</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../testat9/src/main/java/Uebungsblatt12.java</url>
-          <line>102</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
