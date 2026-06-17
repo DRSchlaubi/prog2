@@ -1,3 +1,5 @@
+import javax.print.attribute.HashPrintRequestAttributeSet;
+import javax.print.attribute.standard.DialogTypeSelection;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
@@ -10,6 +12,7 @@ import java.util.List;
 import static java.lang.IO.println;
 
 void main() {
+    final var printerJobs = Executors.newVirtualThreadPerTaskExecutor();
     final List<Integer> neinClix = new ArrayList<>();
 
     JFrame gui = new JFrame("Layout");
@@ -34,19 +37,37 @@ void main() {
 
     JMenuItem actuallyPrint = new JMenuItem("Actually Print queue");
     actuallyPrint.addActionListener(_ -> {
-        var job = PrinterJob.getPrinterJob();
-        job.setPrintable((graphics, _, page) -> {
-            if (page > 0) return Printable.NO_SUCH_PAGE;
-            graphics.drawString(neinClix.toString(), 10, 10);
-            return Printable.PAGE_EXISTS;
-        });
-        if (job.printDialog()) {
-            try {
-                job.print();
-            } catch (PrinterException e) {
-                throw new RuntimeException(e);
+        printerJobs.execute(() -> {
+            var job = PrinterJob.getPrinterJob();
+            var pageFormat = job.defaultPage();
+            var paper = pageFormat.getPaper();
+            // A4 size in 1/72 inch units
+            paper.setSize(595, 842);
+            paper.setImageableArea(72, 72, 451, 698);
+            pageFormat.setPaper(paper);
+
+            job.setPrintable((graphics, pf, page) -> {
+                if (page > 0) return Printable.NO_SUCH_PAGE;
+
+                Graphics2D g2d = (Graphics2D) graphics;
+                g2d.translate(pf.getImageableX(), pf.getImageableY());
+                g2d.setFont(new Font("SansSerif", Font.PLAIN, 24));
+                g2d.drawString(neinClix.toString(), 10, 30);
+
+                return Printable.PAGE_EXISTS;
+            }, pageFormat);
+
+
+            HashPrintRequestAttributeSet attributes = new HashPrintRequestAttributeSet();
+            attributes.add(DialogTypeSelection.NATIVE);
+            if (job.printDialog(attributes)) {
+                try {
+                    job.print(attributes);
+                } catch (PrinterException e) {
+                    throw new RuntimeException(e);
+                }
             }
-        }
+        });
     });
     file.add(actuallyPrint);
 
